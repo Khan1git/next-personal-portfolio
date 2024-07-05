@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.contact_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: cursive;
+    background-color: black;
+    /* border: 1px solid red; */
+}
+
+.contact_home .split {
+    display: flex;
+    height: 97vh;
+    width: 90%;
+    /* border: 3px solid black; */
+}
+
+.contact_home .split .quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    width: 50%;
+    /* border: 3px solid black;/ */
+}
+
+.contact_home .split .quote p {
+    text-align: center;
+    /* letter-spacing: -1px; */
+    font-size: 6.1rem;
+}
+
+
+.contact_home .split .form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    height: 97vh;
+    /* border: 1px solid red; */
+    width: 50%;
+}
+
+.contact_home .split .form .emails {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.contact_home .split .form .emails p {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+
+.contact_home .split .form .input_div {
+    width: 100%;
+}
+
+.contact_home .split .form .input_div a {
+    border: 1px solid white;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.contact_home .split .form input {
+    padding: 1rem;
+    width: 80%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 1020px) {
+    .contact_home .split .quote p {
+       
+        font-size:4rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .contact_home .split {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+        width: 90%;
+        /* border: 3px solid black; */
+    }
+    .contact_home .split .quote {
+        height: 50%;
+    }
+    .contact_home .split .quote p {
+        font-size:2.4rem;
+        width: 100%;
+    }
+    .contact_home .split .form {
+        height: 50%;
+        width: 100%;
+    }
+    .contact_home .split .form input {
+        width: 60%;
+    }
+
+}

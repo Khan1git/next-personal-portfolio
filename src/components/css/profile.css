@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    background: linear-gradient(to right, #ffffff, #cfffaba8);
+}
+
+::-webkit-scrollbar {
+    width: 3px;  /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;  /* Color of the scrollbar handle */
+    border-radius: 2px;  /* Rounded corners for the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #76f07c;  /* Color when hovering over the handle */
+}
+
+
+.profile_home{
+    height: 100vh;
+    display: flex;
+    background: url('/profile2.jpg') center center/cover no-repeat;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    
+}
+
+.profile_home .side1{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 10%;
+    /* background-color: white; */
+    padding-bottom: 2rem;
+    gap: 4rem;
+}
+
+.profile_home .side1 .Link{
+    color: white;
+}
+
+.profile_home .side1 .insta:hover{
+    background-color: red;
+    padding: .3rem;
+    color: white;
+    border-radius: 12px;
+}
+.profile_home .side1 .fb:hover{
+    background-color: rgb(86, 127, 216);
+    padding: .3rem;
+    border-radius: 12px;
+}
+.profile_home .side1 .linkedin:hover{
+    background-color: rgb(86, 127, 216);
+    padding: .3rem;
+    color: white;
+    border-radius: 12px;
+}
+.profile_home .side1 .twitter:hover{
+    background-color: rgb(86, 127, 216);
+    color: white;
+    padding: .3rem;
+    border-radius: 12px;
+}
+.profile_home .side1 .github:hover{
+    background-color: black;
+    color: white;
+    padding: .3rem;
+    border-radius: 12px;
+}
+
+
+
+.profile_home .side2{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* the width is changed from  60 to 100*/
+    gap: 1rem;
+    /* border: 1px solid red; */
+    text-align: center;
+
+}
+.hero_btns{
+    display: flex;
+    gap: .4rem;
+}
+
+.hire_btn{
+    padding: .5rem;
+    /* width: 10vw; */
+    border: 1px solid white;
+    width: 140px;
+    /* border: none; */
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    /* border-radius: 2px; */
+    /* overflow: hidden; */
+}
+
+.project_btn{
+    padding: .5rem;
+    /* width: 10vw; */
+    border: 1px solid white;
+    width: 140px;
+    /* border: none; */
+    border-radius: 34px;
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    /* overflow: hidden; */
+}
+
+.project_btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 10px white;
+}
+.hire_btn:hover{
+    box-shadow: 0px 0px 10px white;
+    background-color: white;
+    color: black;
+}
+
+.profile_home .side2 h2{
+    font-size: 5em;
+    color: white;
+}
+.profile_home .side2 p{
+    font-size: 1.3rem;
+    color: white;
+    width: 70%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .skills {
+    /* background-color: ; */
+    padding: 5px;
+    border: 1px solid rgb(157, 255, 138);
+    text-align: center;
+    color: green;
+    /* box-shadow: 0.2px 0.1px 0.3px green; */
+    /* box-shadow: 0px 0px 10px red; */
+  }
+
+  .skills:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px grey;
+    border: none;
+  }
+/* 
+
+.profile_home .side3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    /* border: 1px solid red; */
+    /* background: url('/hero12.svg') center center/cover;
+    background-size: 190% 180%; 
+    text-align: center; */
+
+/* } */
+
+.profile_home .side3{
+    height: 100vh;
+    /* width: 100%; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    /* border: 1px solid red; */
+    position: relative; /* add this */
+    /* z-index: 1; add this */
+    background: url('/hero12.svg') center center/cover no-repeat;
+    background-size: 190% 190%; /* increase width and height by 20% */
+    text-align: center;
+    overflow: hidden;
+}
+
+.profile_home .side3 h1{
+    color: black;
+}
+
+.profile_home .side3 p{
+    width: 70%;
+    color: black;
+}
+
+@media (max-width: 100px) {
+    body{
+        overflow: hidden;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .profile_home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+ .profile_home .side1{
+        display: none;
+    }
+    
+    .profile_home .side2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+    }
+
+    .profile_home .side2 h2{
+        font-size: 1rem;
+    }
+    .profile_home .side2 p{
+        font-size: smaller;
+    }
+    .profile_home .side3{
+        width: 100%;
+        height: 40%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_home .side3 img{
+        height: 70%;
+    }
+}
