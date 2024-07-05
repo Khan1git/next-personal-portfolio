@@ -7,7 +7,7 @@ function Connect() {
     <section className="contact_home">
         <div className="split">
             <div className="quote">
-                <p> Want To start a New Project ?</p>
+                <p> Want To start a New Project?</p>
             </div>
             <div className="form">
                 <div className='emails'>
