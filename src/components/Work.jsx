@@ -34,7 +34,7 @@ function Work() {
         <>
             <section className="work_home">
                 <h2>PROJECTS</h2>
-                <p className='head_p'>some projects from  frontend and fullstack you can find all other on my github account</p>
+                <p className='head_p'>some projects from frontend and fullstack you can find all other on my github account hover on the project to see the project</p>
                 <div className="parent">
                     <div className="course-box">
                         {projects.map((project, index) => (
