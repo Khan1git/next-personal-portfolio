@@ -35,9 +35,9 @@ body{
     
     height: 70%;
     width: 90%;
-    /* border: 1px solid white ; */
     overflow: hidden;
     overflow-y: scroll;
+   
 }
 
 .work_home .course-box{
@@ -46,6 +46,7 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
     margin-top: 50px;
+    scroll-snap-type: x mandatory;
 }
 
 .work_home h1{
@@ -59,9 +60,11 @@ body{
     color: white;
     height: 80%;
     border-radius: 23px;
-    /* border: 1px solid grey; */
-    /* padding: 23px; */
+    border: 1px solid grey;
+    padding: 23px;
     position: relative;
+    border-bottom: none;
+    scroll-snap-align: center;
     
 }
 
@@ -84,7 +87,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    border: 1px solid grey;
+    border-top: none;
+    /* padding: 123px; */
     /* align-items: center; */
+
     gap: .4rem;
     color: white;
     padding: 15px 15px 15px 15px;
