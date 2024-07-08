@@ -27,7 +27,9 @@ body{
 .about_home .about_side1 h2{
     font-size: 12rem;
     text-align: center;
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
+    text-decoration: 1px underline;
+    border-top: 1px solid grey;
 
 }
 
@@ -35,7 +37,7 @@ body{
     display: flex;
     height: 60%;
     width: 100%;
-    /* border: 1px solid red; */
+    border-bottom: 1px solid grey;
 }
 
 

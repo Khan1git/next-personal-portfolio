@@ -47,6 +47,7 @@ body {
     box-sizing: border-box;
     scroll-snap-type: x mandatory; /* Ensures horizontal snap scrolling */
     scroll-behavior: smooth; /* Smooth scrolling behavior */
+    border-bottom: 1px solid grey;
 }
 
 .project_home .project {
