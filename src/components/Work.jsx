@@ -29,6 +29,28 @@ function Work() {
     ];
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [loading, setLoading] = useState(Array(projects.length).fill(false));
+
+    const handleMouseEnter = (index) => {
+        setHoveredIndex(index);
+        setLoading((prevLoading) => {
+            const newLoading = [...prevLoading];
+            newLoading[index] = true;
+            return newLoading;
+        });
+    };
+
+    const handleVideoLoadedData = (index) => {
+        setLoading((prevLoading) => {
+            const newLoading = [...prevLoading];
+            newLoading[index] = false;
+            return newLoading;
+        });
+    };
+
+    const LoadingStyle = {
+        textAlign: "center",
+    }
 
     return (
         <>
@@ -41,17 +63,21 @@ function Work() {
                             <div
                                 key={index}
                                 className="courses"
-                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseEnter={() => handleMouseEnter(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
                                 {hoveredIndex === index ? (
-                                    <video
-                                        src={project.videoSrc}
-                                        autoPlay
-                                        loop
-                                        muted
-                                        className="project-video"
-                                    />
+                                    <>
+                                        {loading[index] && <div className="loading" style={LoadingStyle}>Loading...</div>}
+                                        <video
+                                            src={project.videoSrc}
+                                            autoPlay
+                                            loop
+                                            muted
+                                            className="project-video"
+                                            onLoadedData={() => handleVideoLoadedData(index)}
+                                        />
+                                    </>
                                 ) : (
                                     <img src={project.imgSrc} alt="" className="project-image" />
                                 )}
