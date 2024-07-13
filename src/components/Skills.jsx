@@ -7,7 +7,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger)
 
-function skill() {
+function Skill() {
 
     useGSAP(() => {
 
@@ -168,4 +168,4 @@ function skill() {
     )
 }
 
-export default skill
+export default Skill
