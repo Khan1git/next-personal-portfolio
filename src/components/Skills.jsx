@@ -4,10 +4,12 @@ import './css/skills.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { useEffect } from 'react';
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Skill() {
+
 
     useGSAP(() => {
 
@@ -18,12 +20,12 @@ function Skill() {
                 pinSpacing: true, // Handle potential layout issues
                 toggleActions: 'play pause resume reset',
                 start: 'top 600px',
-                scrub: true
+                // scrub: true
             },
             x: -100,
             ease: 'easeIn',
             opacity: 0,
-            delay: .3,
+            // delay: .3,
             duration: 2,
         });
 
@@ -113,6 +115,8 @@ function Skill() {
         });
 
     }, [])
+
+
     return (
         <>
             <section className='skill_home'>
