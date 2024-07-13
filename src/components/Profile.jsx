@@ -5,9 +5,12 @@ import './css/profile.css'
 
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger)
 
 function Profile() {
+
 
     useGSAP(()=>{
 
@@ -114,7 +117,6 @@ function Profile() {
           })
 
     })
-
 
 
     return (
