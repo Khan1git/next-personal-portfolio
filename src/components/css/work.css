@@ -59,6 +59,7 @@ body {
     grid-gap: 2rem;
     margin-top: 50px;
     scroll-snap-type: x mandatory;
+     scroll-snap-align: center;
 }
 
 .work_home h1 {
@@ -71,8 +72,8 @@ body {
     /* background-color: grey; */
     color: white;
     height: 80%;
-    border-radius: 23px;
-    border: 1px solid grey;
+    /* border-radius: 23px; */
+    /* border: 1px solid grey; */
     padding: 23px;
     position: relative;
     border-bottom: none;
@@ -99,7 +100,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-top: none;
     /* padding: 123px; */
     /* align-items: center; */
