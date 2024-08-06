@@ -15,6 +15,7 @@ body {
     color: white;
     background-color: black;
     /* border: 1px solid red; */
+    overflow: hidden;
     border-bottom: 1px solid grey;
 }
 
