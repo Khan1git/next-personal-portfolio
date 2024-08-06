@@ -342,7 +342,9 @@ body {
     .profile_home .side2 h2 {
         font-size: 6em;
     }
+    
 }
+
 
 @media (max-width: 420px) {
     .profile_home .side2 h2 {
