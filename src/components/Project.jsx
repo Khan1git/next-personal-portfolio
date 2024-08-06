@@ -21,21 +21,11 @@ function Project() {
             <div className="text">Backend</div>
             <img src="/backend.avif" alt="Project Image" className="image" />
           </div>
-          {/* <div className="project">
-            <div className="number">2</div>
-            <div className="text">Website Animation</div>
-            <img src="/profile2.jpg" alt="Project Image" className="image" />
-          </div> */}
           <div className="project">
             <div className="number">2</div>
             <div className="text">Bug Hunting</div>
             <img src="/bughunt.png" alt="Project Image" className="image" />
           </div>
-          {/* <div className="project">
-            <div className="number">4</div>
-            <div className="text">GSAP ANIMATED WEBSITE</div>
-            <img src="/profile2.jpg" alt="Project Image" className="image" />
-          </div> */}
         </div>
         </div>
       </section>

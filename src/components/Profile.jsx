@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { Github, Twitter, Facebook, Linkedin, Instagram } from 'lucide-react'
+import { Github, Twitter, Facebook, Linkedin, Instagram, Minus } from 'lucide-react'
 import './css/profile.css'
 
 import { useGSAP } from '@gsap/react'
@@ -131,27 +131,28 @@ function Profile() {
             {/* <div className="side3">
                 <img src="/profile.png" alt="" />
             </div> */}
-            <div className="side2">
+            {/* <div className="side2"> 
               <p>Hi I Am Arif Rahman</p>
                 <h2 className='head2'>WEB DEVELOPER</h2>
                 <p className='paragraph'><b>Web Developer</b> almost 1 year of experience and worked in almost 15+ projects recently did projects in nextjs and tailwind css and also completed Bug Bounty full course currenlty doing projects in MERN STACK + NEXTJS and also focuing on Bug Hunting and Removing vulns from websites</p>
                 <div className='hero_btns'>
                 <button className='hire_btn'>Hire Me</button>
                 <button className='project_btn'>Projects</button>
-                {/* <button>Hire Me</button> */}
                 </div>
-                {/* <button>Contact</button> */}
-                {/* <div className='grid'>
-                    <div className="skills skills1">MongoDb</div>
-                    <div className="skills skills2">Expressjs</div>
-                    <div className="skills skills3">ReactJs</div>
-                    <div className="skills skills4">Nodejs</div>
-                    <div className="skills skills5">Javscript</div>
-                    <div className="skills skills6">NextJs</div>
-                    <div className="skills skills6">Bug Hunter</div>
-                    <div className="skills skills6">Tailwind</div>
-                    <div className="skills skills6">Html/Css</div>
-                </div> */}
+            </div>  */}
+            {/* ----------- THE NEW SIDE */}
+            <div className="side2">
+              <h2>Arif</h2>
+              <h2>Rahman</h2>
+              <p>
+                {/* <Minus size={100} strokeWidth={0.5} /> */}
+                <span>Projects: 10+</span>
+                {/* <Minus size={100} strokeWidth={0.5} /> */}
+                <span>Experience: 1.5+</span>
+                {/* <Minus size={100} strokeWidth={0.5} /> */}
+                <span>Education: 16yrs</span>
+
+              </p>
             </div>
         </div>
     )

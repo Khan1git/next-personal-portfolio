@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Connect from "@/components/Connect";
+import Education from "@/components/Education";
 import Profile from "@/components/Profile";
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Work/>
+      {/* <Education/> */}
       <Project/>
       <Connect/>
      </div>

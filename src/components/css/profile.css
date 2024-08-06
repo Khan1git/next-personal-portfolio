@@ -1,13 +1,14 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    /* font-family: cursive; */
     background: linear-gradient(to right, #ffffff, #cfffaba8);
 }
 
 ::-webkit-scrollbar {
-    width: 3px;  /* Width of the scrollbar */
+    width: 3px;
+    /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
@@ -16,66 +17,75 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;  /* Color of the scrollbar handle */
-    border-radius: 2px;  /* Rounded corners for the handle */
+    background: black;
+    /* Color of the scrollbar handle */
+    border-radius: 2px;
+    /* Rounded corners for the handle */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #76f07c;  /* Color when hovering over the handle */
+    background: #76f07c;
+    /* Color when hovering over the handle */
 }
 
 
-.profile_home{
+.profile_home {
     height: 100vh;
     display: flex;
-    background: url('/profile2.jpg') center center/cover no-repeat;
+    flex-direction: row-reverse;
+    /* background: url('/profile2.jpg') center center/cover no-repeat; */
+    background-color: black;
     width: 100%;
     text-align: center;
     font-family: cursive;
-    
+
 }
 
-.profile_home .side1{
+.profile_home .side1 {
     height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     width: 10%;
-    /* background-color: white; */
+    /* background-color: red; */
     padding-bottom: 2rem;
-    gap: 4rem;
+    gap: 3rem;
 }
 
-.profile_home .side1 .Link{
+.profile_home .side1 .Link {
     color: white;
 }
 
-.profile_home .side1 .insta:hover{
+.profile_home .side1 .insta:hover {
     background-color: red;
     padding: .3rem;
     color: white;
     border-radius: 12px;
 }
-.profile_home .side1 .fb:hover{
+
+.profile_home .side1 .fb:hover {
     background-color: rgb(86, 127, 216);
     padding: .3rem;
     border-radius: 12px;
 }
-.profile_home .side1 .linkedin:hover{
+
+.profile_home .side1 .linkedin:hover {
     background-color: rgb(86, 127, 216);
     padding: .3rem;
     color: white;
     border-radius: 12px;
 }
-.profile_home .side1 .twitter:hover{
+
+.profile_home .side1 .twitter:hover {
     background-color: rgb(86, 127, 216);
     color: white;
     padding: .3rem;
     border-radius: 12px;
 }
-.profile_home .side1 .github:hover{
+
+.profile_home .side1 .github:hover {
     background-color: black;
     color: white;
     padding: .3rem;
@@ -84,25 +94,46 @@ body{
 
 
 
-.profile_home .side2{
+.profile_home .side2 {
     height: 100vh;
     display: flex;
-    position: relative;
+    /* position: relative; */
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%; /* the width is changed from  60 to 100*/
-    gap: 1rem;
+    align-items: flex-start;
+    /* margin: 0; */
     /* border: 1px solid red; */
-    text-align: center;
-
+    flex-direction: column;
+    width: 100%;
 }
-.hero_btns{
+
+
+.profile_home .side2 h2 {
+    color: white;
+    letter-spacing: 0.1rem;
+    /* text-align: start; */
+    border-bottom: .1px solid white;
+    /* margin: 1%; */
+    gap: 0;
+    margin-left: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10em
+}
+
+
+.profile_home .side2 h2:hover{
+    text-shadow: 0px 0px 1px white;
+    /* background-color: red; */
+    font-size: 10.1em;
+    animation: 1s ease-in;
+}
+
+
+.hero_btns {
     display: flex;
     gap: .4rem;
 }
 
-.hire_btn{
+.hire_btn {
     padding: .5rem;
     /* width: 10vw; */
     border: 1px solid white;
@@ -115,7 +146,7 @@ body{
     /* overflow: hidden; */
 }
 
-.project_btn{
+.project_btn {
     padding: .5rem;
     /* width: 10vw; */
     border: 1px solid white;
@@ -128,34 +159,46 @@ body{
     /* overflow: hidden; */
 }
 
-.project_btn:hover{
+.project_btn:hover {
     background-color: white;
     color: black;
     box-shadow: 0px 0px 10px white;
 }
-.hire_btn:hover{
+
+.hire_btn:hover {
     box-shadow: 0px 0px 10px white;
     background-color: white;
     color: black;
 }
 
-.profile_home .side2 h2{
+/* .profile_home .side2 h2 {
     font-size: 4em;
     color: white;
-}
-.profile_home .side2 p{
+    text-shadow: 0px 0px 10px rgba(36, 36, 235, 0.26);
+ 
+} */
+
+.profile_home .side2 p {
     font-size: 1.2rem;
-    color: white;
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 25%;
+    overflow: hidden;
+    /* border: 1px solid white;  */
+    gap: 18rem;
+     color: white;
+    width: 100%;
 }
+
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-  }
-  
-  .skills {
+}
+
+.skills {
     /* background-color: ; */
     padding: 5px;
     border: 1px solid rgb(157, 255, 138);
@@ -163,15 +206,16 @@ body{
     color: green;
     /* box-shadow: 0.2px 0.1px 0.3px green; */
     /* box-shadow: 0px 0px 10px red; */
-  }
+}
 
-  .skills:hover{
+.skills:hover {
     background-color: black;
     color: white;
     cursor: pointer;
     box-shadow: 0px 0px 10px grey;
     border: none;
-  }
+}
+
 /* 
 
 .profile_home .side3{
@@ -182,13 +226,13 @@ body{
     flex-direction: column;
     width: 40%;
     /* border: 1px solid red; */
-    /* background: url('/hero12.svg') center center/cover;
+/* background: url('/hero12.svg') center center/cover;
     background-size: 190% 180%; 
     text-align: center; */
 
 /* } */
 
-.profile_home .side3{
+.profile_home .side3 {
     height: 100vh;
     /* width: 100%; */
     color: white;
@@ -199,60 +243,85 @@ body{
     flex-direction: column;
     width: 40%;
     /* border: 1px solid red; */
-    position: relative; /* add this */
+    position: relative;
+    /* add this */
     /* z-index: 1; add this */
     background: url('/hero12.svg') center center/cover no-repeat;
-    background-size: 190% 190%; /* increase width and height by 20% */
+    background-size: 190% 190%;
+    /* increase width and height by 20% */
     text-align: center;
     overflow: hidden;
 }
 
-.profile_home .side3 h1{
+.profile_home .side3 h1 {
     color: black;
 }
 
-.profile_home .side3 p{
+.profile_home .side3 p {
     width: 70%;
     color: black;
 }
 
 @media (max-width: 100px) {
-    body{
+    body {
         overflow: hidden;
     }
-    
+
 }
 
-@media (max-width: 800px) {
-    .profile_home{
+@media (max-width: 970px) {
+  
+    .profile_home .side2 h2 {
+        font-size: 8em;
+    }
+    .profile_home .side2 p{
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .profile_home {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column;   */
+        /* justify-content: center; */
         align-items: center;
         height: 100vh;
         width: 100%;
     }
 
- .profile_home .side1{
+    .profile_home .side1 {
         display: none;
     }
-    
-    .profile_home .side2{
+
+    .profile_home .side2 {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
         width: 100%;
-        height: 40%;
+        height: 100%;
     }
 
-    .profile_home .side2 h2{
-        font-size: 1rem;
+    .profile_home .side2 h2 {
+        font-size: 8em;
     }
-    .profile_home .side2 p{
-        font-size: smaller;
-    }
-    .profile_home .side3{
+
+    .profile_home .side2 p {
+        /* text-align: ; */
+        height: 30%;
+        /* font-size: smaller; */
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2rem;
         width: 100%;
+        overflow: hidden;
+        /* border: 1px solid red; */
+    }
+
+    .profile_home .side3 {
+        width: 100%;
+        display: none;
         height: 40%;
         /* border: 1px solid red; */
         display: flex;
@@ -260,7 +329,22 @@ body{
         align-items: center;
     }
 
-    .profile_home .side3 img{
+    .profile_home .side3 img {
         height: 70%;
+        display: none;
     }
+}
+
+
+@media (max-width: 520px) {
+    .profile_home .side2 h2 {
+        font-size: 6em;
+    }
+}
+@media (max-width: 420px) {
+    .profile_home .side2 h2 {
+        font-size: 4em;
+        text-align: center;
+    }
+   
 }

@@ -8,22 +8,29 @@ function Work() {
         {
             imgSrc: "/project/project1.png",
             videoSrc: "/project/project1.mp4",
-            title: "MERNSTACK BILLING APPLICATION",
+            title: "Billing Application For Shop ",
             description: "mern stack shop management website",
             link: "https//www.github.com/khan1git"
         },
         {
             imgSrc: "/project/project2.png",
             videoSrc: "/project/project2.mp4",
-            title: "GSAP ANIMATED WEBSITE",
+            title: "Website Animation Using GSAP",
             description: "Animted website using gsap and nextjs for the Billing Application",
             link: "#"
         },
         {
             imgSrc: "/project/project3.png",
             videoSrc: "/project/project3.mp4",
-            title: "MERNSTACK COURSES WEBISTE",
-            description: "Description for project 3",
+            title: "Mern Stack Course Website",
+            description: "Courses website using mern stack",
+            link: "#"
+        },
+        {
+            imgSrc: "/project.png",
+            // videoSrc: "/project/project3.mp4",
+            title: "School Website Design",
+            description: "Simple Website design for School",
             link: "#"
         }
     ];
@@ -91,7 +98,7 @@ function Work() {
                     </div>
                 </div>
                 <div className="btn">
-                    <button>show all</button>
+                    {/* <button>show all</button> */}
                 </div>
             </section>
         </>
