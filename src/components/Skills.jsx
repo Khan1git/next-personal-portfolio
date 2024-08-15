@@ -161,8 +161,8 @@ function Skill() {
                                 <p>Tailwind CSS</p>
                             </div>
                             <div className="skill skill6">
-                                <img src="/htmlcss.png" alt="mongodb" height={70} />
-                                <p>HTML & CSS</p>
+                                <img src="/python.svg" alt="mongodb" height={70} />
+                                <p>Python</p>
                             </div>
                         </div>
                     </div>

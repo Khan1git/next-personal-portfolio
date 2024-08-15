@@ -183,7 +183,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    height: 30%;
+    height: 20%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
     /* border: 1px solid white;  */

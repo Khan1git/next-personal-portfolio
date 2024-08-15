@@ -36,10 +36,10 @@ body {
 } */
 .work_home .parent {
 
-    height: 70%;
+    height: 80vh;
     width: 90%;
-    /* overflow: hidden;
-    overflow-y: scroll; */
+    overflow: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -53,13 +53,11 @@ body {
 }
 
 .work_home .course-box {
-    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     grid-gap: 2rem;
     margin-top: 50px;
-    scroll-snap-type: x mandatory;
-     scroll-snap-align: center;
+    /* overflow: hidden; */
 }
 
 .work_home h1 {
@@ -69,80 +67,41 @@ body {
 
 .work_home .courses {
     text-align: start;
-    /* background-color: grey; */
-    color: white;
-    height: 80%;
-    /* border-radius: 23px; */
-    /* border: 1px solid grey; */
-    padding: 23px;
     position: relative;
+    border-radius: 12px;
+    color: black;
+    background-color: white;
+    height: 90%;
+    padding: 1rem;
     border-bottom: none;
     scroll-snap-align: center;
-
 }
 
-.project-image,
-.project-video {
+.project-image {
     width: 100%;
     height: 100%;
-    /* object-position: center; */
     object-fit: cover;
 }
 
-.work_home .courses img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.courses .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    /* border: 1px solid grey; */
-    border-top: none;
-    /* padding: 123px; */
-    /* align-items: center; */
-
-    gap: .4rem;
-    color: white;
-    padding: 15px 15px 15px 15px;
-}
-
-.work_home .courses .cost {
-    background-color: rgb(230, 230, 230);
-    color: #000000;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
+.upper {
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    right: 15px;
-    bottom: 100px;
-
-}
-
-
-.btn {
-    width: 80%;
     display: flex;
-    justify-content: end;
-    align-items: flex-end;
-
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    /* border: 1px solid red; */
+    text-align: center;
+    height: 10%;
+    width: 80%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* border-bottom-right-radius: 12px; */
+    border-bottom-left-radius: 12px;
+    background-color: white;
+    top: 0; /* Adjust as needed */
+    right: 0; /* Adjust as needed */
 }
 
-.btn button {
-    padding: .5rem;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 50%;
-    color: white;
-}
 
 @media (max-width: 600px) {
 

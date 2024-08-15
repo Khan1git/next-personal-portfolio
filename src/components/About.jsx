@@ -88,9 +88,30 @@ function About() {
           <ArrowUpRight size={510} color="#fcfcfc" />
         </div>
         <div className="content">
-          <div className='p-1'>
-            <b>MERN STACK</b> IT student experienced in mern stack completed almost 10+ project in mernstack fluient in crud operations also worked with firebase and cloudinary and other ui component provider such as bootstrap etc.</div>
-          <div className='p-2'>futher more full stack nextjs and tailwind css and also completed bug bounty course currently expanding my knowladge using tryhackme .</div>
+          <div className="about1">
+            <label htmlFor="mernstack">Mern Stack</label>
+            <progress id="progress-bar" className='mernstack' value="80" max="100"></progress>
+          </div>
+          <div className="about1">
+            Nextjs
+            <progress id="progress-bar" value="60" max="100" >50%</progress>
+          </div>
+          <div className="about1">
+            Python
+            <progress id="progress-bar" value="50" max="100"></progress>
+          </div>
+          <div className="about1">
+            Bug Hunter
+            <progress id="progress-bar" value="50" max="100"></progress>
+          </div>
+          <div className="about1">
+            Python
+            <progress id="progress-bar" value="55" max="100"></progress>
+          </div>
+          <div className="about1">
+            Excel | Word
+            <progress id="progress-bar" value="55" max="100"></progress>
+          </div>
         </div>
       </div>
     </div>
