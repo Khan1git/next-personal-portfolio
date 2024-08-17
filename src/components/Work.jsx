@@ -29,7 +29,7 @@ function Work() {
         {
             imgSrc: "/project/project4.png",
             // videoSrc: "/project/project3.mp4",
-            title: "Socail Media App like Insta|Fb",
+            title: "Socail Media App ",
             description: "Simple Website design for School",
             link: "#"
         },
