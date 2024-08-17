@@ -76,6 +76,21 @@ function About() {
       duration: 2,
     });
 
+    gsap.from('.about1', {
+      scrollTrigger: {
+        trigger: '.about1',
+        // markers: true, // Ensure correct property name
+        pinSpacing: true, // Handle potential layout issues
+        toggleActions: 'play pause resume reset',
+        start: 'top 600px',
+      },
+      y: 100,
+      ease: 'easeIn',
+      opacity: 0,
+      delay: .3,
+      duration: 2,
+    });
+
 
   }, [])
   return (

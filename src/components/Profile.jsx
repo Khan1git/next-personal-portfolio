@@ -13,9 +13,6 @@ function Profile() {
 
 
     useGSAP(()=>{
-
-        //------------------ THE SIDE ICONS ANIMATION
-        
         gsap.from('.Link1', {
             y: 100,
             opacity: 0,
@@ -45,6 +42,7 @@ function Profile() {
             delay: 1.7,
             duration: 2
           })
+
           //------------------- THE SKILLS ANIMATION ---------------
         gsap.from('.skills1', {
             y: 100,
@@ -116,6 +114,39 @@ function Profile() {
 
           })
 
+          gsap.from('.F_name',{
+            x:-100,
+            delay: 1,
+            opacity: 0,
+            duration: 1
+          })
+          gsap.from('.Last_name',{
+            x:-100,
+            delay: 1.4,
+            opacity: 0,
+            duration: 2
+          })
+
+          gsap.from('.span-1',{
+            x:-100,
+            delay: .4,
+            opacity: 0,
+            duration: 2
+          })
+          gsap.from('.span-2',{
+            x:-100,
+            delay: 1,
+            opacity: 0,
+            duration: 2
+          })
+          gsap.from('.span-3',{
+            x:-100,
+            delay: 1.4,
+            opacity: 0,
+            duration: 2
+          })
+
+
     })
 
 
@@ -142,15 +173,15 @@ function Profile() {
             </div>  */}
             {/* ----------- THE NEW SIDE */}
             <div className="side2">
-              <h2>Arif</h2>
-              <h2>Rahman</h2>
+              <h2 className='F_name'>Arif</h2>
+              <h2 className='Last_name'>Rahman</h2>
               <p>
                 {/* <Minus size={100} strokeWidth={0.5} /> */}
-                <span>Projects: 10+</span>
+                <span className='span-1'>Projects: 10+</span>
                 {/* <Minus size={100} strokeWidth={0.5} /> */}
-                <span>Experience: 1.5+</span>
+                <span className='span-2'>Experience: 1.5+</span>
                 {/* <Minus size={100} strokeWidth={0.5} /> */}
-                <span>Education: 16yrs</span>
+                <span className='span-3'>Education: 16yrs</span>
 
               </p>
             </div>

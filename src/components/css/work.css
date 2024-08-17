@@ -5,6 +5,7 @@ body {
 }
 
 .work_home {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,9 +109,13 @@ body {
     .work_home .course-box {
         /* border: 1px solid red; */
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        grid-gap: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-gap: 2rem;
         margin-top: 50px;
+    }
+
+    .upper {
+        font-size: 10px;
     }
 
 }

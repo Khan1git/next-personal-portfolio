@@ -13,13 +13,6 @@ function Work() {
             link: "https//www.github.com/khan1git"
         },
         {
-            imgSrc: "/project/project2.png",
-            videoSrc: "/project/project2.mp4",
-            title: "Animated Webiste Using Gsap",
-            description: "Animted website using gsap and nextjs for the Billing Application",
-            link: "#"
-        },
-        {
             imgSrc: "/project/project3.png",
             videoSrc: "/project/project3.mp4",
             title: "Mern Stack Course Website",
@@ -27,14 +20,14 @@ function Work() {
             link: "#"
         },
         {
-            imgSrc: "/project.png",
-            // videoSrc: "/project/project3.mp4",
-            title: "School Website Design",
-            description: "Simple Website design for School",
+            imgSrc: "/project/project2.png",
+            videoSrc: "/project/project2.mp4",
+            title: "Animated Webiste Using Gsap",
+            description: "Animted website using gsap and nextjs for the Billing Application",
             link: "#"
         },
         {
-            imgSrc: "/project.png",
+            imgSrc: "/project/project4.png",
             // videoSrc: "/project/project3.mp4",
             title: "Socail Media App like Insta|Fb",
             description: "Simple Website design for School",
