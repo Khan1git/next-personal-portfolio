@@ -32,6 +32,13 @@ function Work() {
             title: "Socail Media App like Insta|Fb",
             description: "Simple Website design for School",
             link: "#"
+        },
+        {
+            imgSrc: "/project/project.png",
+            // videoSrc: "/project/project3.mp4",
+            title: "Templets Selling Website",
+            description: "Simple Website design for School",
+            link: "#"
         }
     ];
 
