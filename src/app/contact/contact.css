@@ -18,24 +18,39 @@ body {
 
 .contact_home .split {
     display: flex;
-    height: 97vh;
+    height: 70vh;
     width: 90%;
-    /* border: 3px solid black; */
+    /* border: 3px solid red; */
 }
 
 .contact_home .split .quote {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
     align-items: center;
-    height: 97vh;
+    height: 100%;
     width: 50%;
-    /* border: 3px solid black;/ */
+    /* border: 3px solid red; */
 }
+
+.contact_home .split .quote h2 {
+    text-align: center;
+    /* letter-spacing: -1px; */
+    font-size: 2.1rem;
+}
+
+.contact_home .split .quote h2 span{
+    color: #c70039;
+}
+
 
 .contact_home .split .quote p {
     text-align: center;
+    font-size: x-large;
+    /* font-family:'Courier New', Courier, monospace */
     /* letter-spacing: -1px; */
-    font-size: 6.1rem;
+    /* font-size: 2.1rem; */
 }
 
 
@@ -45,7 +60,7 @@ body {
     align-items: center;
     padding: 1rem;
     flex-direction: column;
-    height: 97vh;
+    /* height: 97vh; */
     /* border: 1px solid red; */
     width: 50%;
 }
@@ -66,30 +81,54 @@ body {
 
 
 .contact_home .split .form .input_div {
+    display: flex;
+    height: 80%;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
+    /* border: 1px solid red; */
 }
+
+.contact_home .split .form .input_div .top {
+    display: flex;
+    gap: 1rem;
+}
+
+
 
 .contact_home .split .form .input_div a {
     border: 1px solid white;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    background-color: #c70039;;
+    /* height: 50%; */
+    text-align: center;
     border-radius: 50%;
 }
 
 .contact_home .split .form input {
+    background-color: rgba(29, 28, 28, 0.534);
     padding: 1rem;
-    width: 80%;
+    width: 100%;
     outline: none;
-    background-color: transparent;
+    /* background-color: transparent; */
     border: none;
     color: white;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    /* border-bottom: 1px solid rgb(255, 255, 255); */
+}
+
+.contact_home .split .form textarea{
+    background-color: rgba(29, 28, 28, 0.534);
+    border: none;
+    color: white;
+    outline: none;
+    padding: .5rem;
 }
 
 @media (max-width: 1020px) {
     .contact_home .split .quote p {
-       
-        font-size:4rem;
+
+        font-size: 4rem;
     }
 
 }
@@ -104,17 +143,29 @@ body {
         width: 90%;
         /* border: 3px solid black; */
     }
+
     .contact_home .split .quote {
         height: 50%;
     }
+
     .contact_home .split .quote p {
-        font-size:2.4rem;
+        display: none;
+    }
+
+    .contact_home .split .quote p {
+        font-size: 2rem;
         width: 100%;
     }
+
     .contact_home .split .form {
         height: 50%;
         width: 100%;
     }
+
+    .contact_home .split .form .emails p {
+        font-size: medium;
+    }
+
     .contact_home .split .form input {
         width: 60%;
     }

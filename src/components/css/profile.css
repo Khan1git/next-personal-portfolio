@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     /* font-family: cursive; */
+    /* filter: blur(1px) grayscale(20%); */
     background: linear-gradient(to right, #ffffff, #cfffaba8);
 }
 
@@ -33,7 +34,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
-    /* background: url('/profile2.jpg') center center/cover no-repeat; */
+    background: url('/profile2.jpg') center center/cover no-repeat;
+    /* transform: scaleX(-1); */
     background-color: black;
     width: 100%;
     text-align: center;
@@ -51,7 +53,7 @@ body {
     width: 10%;
     /* background-color: red; */
     padding-bottom: 2rem;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .profile_home .side1 .Link {
@@ -95,36 +97,48 @@ body {
 
 
 .profile_home .side2 {
-    height: 100vh;
+    height: 100%;
     display: flex;
-    /* position: relative; */
+    /* text-align: center; */
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: center; */
     /* margin: 0; */
+    gap: 12rem;
     /* border: 1px solid red; */
     flex-direction: column;
-    width: 100%;
+    width: 80%;
 }
 
+.profile_home .side2 h1 span {
+    font-family: fantasy;
+    color: #c70039;
+    transition: all .4s ease;
+}
 
-.profile_home .side2 h2 {
+.profile_home .side2 h1 {
     color: white;
-    letter-spacing: 0.1rem;
-    /* text-align: start; */
-    border-bottom: .1px solid white;
-    /* margin: 1%; */
+    letter-spacing: 0.4rem;
     gap: 0;
-    margin-left: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10em
+    font-family: fantasy;
+    font-size: 4em
 }
 
+.side2 .typewriter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-.profile_home .side2 h2:hover {
-    text-shadow: 0px 0px 1px white;
-    /* background-color: red; */
-    font-size: 10.1em;
-    animation: 1s ease-in;
+.typewriter-head {
+    font-size: 2em;
+    margin: 0.5rem;
+}
+
+.typewriter-text {
+    color: #c70039;
+    font-size: 2em;
 }
 
 
@@ -171,27 +185,6 @@ body {
     color: black;
 }
 
-/* .profile_home .side2 h2 {
-    font-size: 4em;
-    color: white;
-    text-shadow: 0px 0px 10px rgba(36, 36, 235, 0.26);
- 
-} */
-
-.profile_home .side2 p {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 20%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    /* border: 1px solid white;  */
-    /* gap: 7rem; */
-    color: white;
-    width: 70%;
-}
-
 
 .grid {
     display: grid;
@@ -217,50 +210,38 @@ body {
     border: none;
 }
 
-/* 
-
-.profile_home .side3{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-    /* border: 1px solid red; */
-/* background: url('/hero12.svg') center center/cover;
-    background-size: 190% 180%; 
-    text-align: center; */
-
-/* } */
 
 .profile_home .side3 {
     height: 100vh;
-    /* width: 100%; */
-    color: white;
     display: flex;
     justify-content: center;
-    display: none;
-    align-items: center;
     flex-direction: column;
-    width: 40%;
-    /* border: 1px solid red; */
-    position: relative;
-    /* add this */
-    /* z-index: 1; add this */
-    background: url('/hero12.svg') center center/cover no-repeat;
-    background-size: 190% 190%;
-    /* increase width and height by 20% */
-    text-align: center;
-    overflow: hidden;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    width: 10%;
 }
 
 .profile_home .side3 h1 {
     color: black;
 }
 
-.profile_home .side3 p {
-    width: 70%;
-    color: black;
+
+.profile_home .side3 .icons{
+    width: 100%;
+    /* height: 80%; */
+    /* border: 1px solid red; */
+}
+
+.profile_home .side3 .icons img{
+    width: 50%;
+    filter: grayscale(100%);
+    /* border: 1px solid red; */
+}
+.profile_home .side3 .icons img:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    /* border: 1px solid red; */
 }
 
 @media (max-width: 100px) {
@@ -272,9 +253,6 @@ body {
 
 @media (max-width: 970px) {
 
-    .profile_home .side2 h2 {
-        font-size: 8em;
-    }
 
     .profile_home .side2 p {
         gap: 1rem;
@@ -285,8 +263,6 @@ body {
 @media (max-width: 780px) {
     .profile_home {
         display: flex;
-        /* flex-direction: column;   */
-        /* justify-content: center; */
         align-items: center;
         height: 100vh;
         width: 100%;
@@ -298,20 +274,16 @@ body {
 
     .profile_home .side2 {
         display: flex;
-        /* justify-content: center; */
-        /* align-items: center; */
         width: 100%;
-        height: 100%;
+        flex-direction: column;
     }
 
-    .profile_home .side2 h2 {
-        font-size: 8em;
+    .profile_home .side2 h1 {
+        font-size: 2em;
+        letter-spacing: 0.1rem;
     }
 
     .profile_home .side2 p {
-        /* text-align: ; */
-        /* height: 30%; */
-        /* font-size: smaller; */
         gap: 1rem;
         flex-direction: column;
         align-items: flex-start;
@@ -324,11 +296,6 @@ body {
     .profile_home .side3 {
         width: 100%;
         display: none;
-        height: 40%;
-        /* border: 1px solid red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .profile_home .side3 img {
@@ -342,7 +309,12 @@ body {
     .profile_home .side2 h2 {
         font-size: 6em;
     }
-    
+
+    .profile_home .side3 {
+        width: 100%;
+        display: none;
+    }
+
 }
 
 
@@ -352,4 +324,8 @@ body {
         text-align: center;
     }
 
+    .profile_home .side3 {
+        width: 100%;
+        display: none;
+    }
 }

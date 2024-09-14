@@ -152,7 +152,7 @@ h1 sup {
 }
 
 .menu-links-item-holder a:hover{
-    background-color: black;
+    background-color: #c70039;
     color: white;
     cursor: pointer;
 }

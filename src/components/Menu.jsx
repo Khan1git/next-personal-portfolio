@@ -15,9 +15,9 @@ function Menu() {
 
     const menuLinks = [
         { path: '/', label: "Home" },
-        { path: '/', label: "Projects" },
-        { path: '/', label: "About" },
-        { path: '/', label: "Contact" },
+        { path: '/projects', label: "Projects" },
+        { path: '/about', label: "About" },
+        { path: '/contact', label: "Contact" },
         { path: '/', label: "Lab" },
     ];
 

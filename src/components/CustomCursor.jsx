@@ -6,10 +6,11 @@ import './css/cursor.css';
 function CustomCursor() {
   const [cursorX, setCursorX] = useState(-50); // Initial position
   const [cursorY, setCursorY] = useState(-50); // Initial position
-  const [mouseX, setMouseX] = useState(-50); // Initial mouse position
-  const [mouseY, setMouseY] = useState(-50); // Initial mouse position
+  const [mouseX, setMouseX] = useState(-50); // Mouse position
+  const [mouseY, setMouseY] = useState(-50); // Mouse position
   const [isHovering, setIsHovering] = useState(false);
   const cursorRef = useRef(null);
+  const [animationFrameId, setAnimationFrameId] = useState(null);
 
   const handleMouseMove = (e) => {
     setMouseX(e.clientX);
@@ -28,9 +29,17 @@ function CustomCursor() {
       const factor = 0.1; // Adjust this value to control the interpolation speed
       setCursorX((prevX) => prevX + (mouseX - prevX) * factor);
       setCursorY((prevY) => prevY + (mouseY - prevY) * factor);
-      requestAnimationFrame(followMouse);
+      const id = requestAnimationFrame(followMouse);
+      setAnimationFrameId(id);
     };
+    
     followMouse();
+
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, [mouseX, mouseY]);
 
   useEffect(() => {
@@ -44,7 +53,7 @@ function CustomCursor() {
           }
         });
       },
-      { threshold: .5 }
+      { threshold: 0.5 }
     );
 
     const blackTextElements = document.querySelectorAll('.HeroSection');
@@ -60,7 +69,7 @@ function CustomCursor() {
       ref={cursorRef}
       className={`cursor ${isHovering ? 'white' : ''}`}
       style={{ left: `${cursorX}px`, top: `${cursorY}px` }}
-    >ARIF</div>
+    ></div>
   );
 }
 

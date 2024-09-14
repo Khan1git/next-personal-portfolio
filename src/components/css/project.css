@@ -2,11 +2,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .project_home {
-    height: 60vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 
 .cover{
     /* border: 1px solid red; */
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
