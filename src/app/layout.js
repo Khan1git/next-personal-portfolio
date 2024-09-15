@@ -6,8 +6,8 @@ import CustomCursor from "@/components/CustomCursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Peronsal PortFolio Webiste",
-  description: "portfolio website using nextjs ",
+  title: "Arif Rahman",
+  description: "Arif rahman personal portfolio website ",
 };
 
 export default function RootLayout({ children, }) {

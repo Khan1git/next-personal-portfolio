@@ -65,10 +65,12 @@ h1 sup {
     z-index: 1;
 }
 
+
 .menu-bar a,
 .menu-open p {
     /* color: black; */
     color: white;
+    /* color: #c70039; */
     cursor: pointer;
 }
 

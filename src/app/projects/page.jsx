@@ -53,6 +53,15 @@ const Project = () => {
                         <p>Modren coursess website using mern stack.</p>
                     </div>
                 </div>
+
+                <div class="project_card">
+                    <img src="/project/project7.png"  alt="Project Image" />
+                    <h3>Portfolio website</h3>
+                    <div class="project_info">
+                    <a href="project_link" class="project_link">View Project</a>
+                        <p>Blog website using mern stack</p>
+                    </div>
+                </div>
                 
                 <div class="project_card">
                     <img src="/project/project5.png"  alt="Project Image" />
@@ -62,6 +71,7 @@ const Project = () => {
                         <p>Client Tissue website design</p>
                     </div>
                 </div>
+
                 <div class="project_card">
                     <img src="/project/project6.png"  alt="Project Image" />
                     <h3>Html and Css School webiste</h3>

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
 import './css/cursor.css';
@@ -26,13 +26,26 @@ function CustomCursor() {
 
   useEffect(() => {
     const followMouse = () => {
-      const factor = 0.1; // Adjust this value to control the interpolation speed
-      setCursorX((prevX) => prevX + (mouseX - prevX) * factor);
-      setCursorY((prevY) => prevY + (mouseY - prevY) * factor);
+      const factor = 0.1; // Interpolation speed
+      const diffX = mouseX - cursorX;
+      const diffY = mouseY - cursorY;
+
+      // Calculate the distance between cursor and mouse pointer
+      const distance = Math.sqrt(diffX * diffX + diffY * diffY);
+
+      // Snap to the mouse if it's close, otherwise follow smoothly
+      if (distance < 5) {
+        setCursorX(mouseX); // Snap to the mouse position
+        setCursorY(mouseY);
+      } else {
+        setCursorX((prevX) => prevX + diffX * factor); // Smooth movement
+        setCursorY((prevY) => prevY + diffY * factor);
+      }
+
       const id = requestAnimationFrame(followMouse);
       setAnimationFrameId(id);
     };
-    
+
     followMouse();
 
     return () => {

@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     /* font-family: cursive; */
+    transition: 1s ease-in;
     /* filter: blur(1px) grayscale(20%); */
     background: linear-gradient(to right, #ffffff, #cfffaba8);
 }
@@ -37,6 +38,8 @@ body {
     background: url('/profile2.jpg') center center/cover no-repeat;
     /* transform: scaleX(-1); */
     background-color: black;
+    /* filter: grayscale(100%);  */
+    
     width: 100%;
     text-align: center;
     font-family: cursive;
@@ -101,9 +104,7 @@ body {
     display: flex;
     /* text-align: center; */
     justify-content: center;
-    /* align-items: center; */
-    /* margin: 0; */
-    gap: 12rem;
+    align-items: center;
     /* border: 1px solid red; */
     flex-direction: column;
     width: 80%;
@@ -114,11 +115,20 @@ body {
     color: #c70039;
     transition: all .4s ease;
 }
+.profile_home .side2 p{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    font-family: fantasy;
+    color: #c70039;
+    transition: all .4s ease;
+}
 
 .profile_home .side2 h1 {
     color: white;
     letter-spacing: 0.4rem;
     gap: 0;
+    /* border: 1px solid red; */
     font-family: fantasy;
     font-size: 4em
 }
@@ -213,6 +223,7 @@ body {
 
 .profile_home .side3 {
     height: 100vh;
+    /* background-color: #c70039; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -243,6 +254,8 @@ body {
     filter: grayscale(0%);
     /* border: 1px solid red; */
 }
+
+
 
 @media (max-width: 100px) {
     body {

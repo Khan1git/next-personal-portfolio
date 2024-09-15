@@ -2,7 +2,6 @@
 import './about.css'
 import { ArrowUpRight } from 'lucide-react'
 
-
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
@@ -106,7 +105,10 @@ function About() {
             <p>web developer having 2 years of experience successfully completed 15+ projects stacks include | HTML CSS AND JAVASCRIPT | MERN STACK AND NEXTJS | PYTHON FLASK
               | Bug Bounty Experience include Owasp top 10 still learning and exploring THM AND HTB
             </p>
-            <button>Download CV</button>
+            <a href="/arifRahman.pdf" download="arifRahman.pdf">
+              <button>Download CV</button>
+            </a>
+
           </div>
           <div className="side_1_img">
             <img src="./profile3.jpeg" alt="" />
@@ -180,8 +182,8 @@ function About() {
 
           {/* <!-- Last div with greater height --> */}
           <div class="skill-item large">
-          <img src="/bughunt.png" alt="Skill" />
-          <p>Bug Bounty</p>
+            <img src="/bughunt.png" alt="Skill" />
+            <p>Bug Bounty</p>
           </div>
         </div>
       </section>

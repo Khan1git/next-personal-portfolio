@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { Github, Twitter, Facebook, Linkedin, Instagram, Minus } from 'lucide-react'
 import './css/profile.css'
+import { useEffect } from 'react'
 
 import Typewriter from 'typewriter-effect'
 
@@ -153,7 +154,9 @@ function Profile() {
 
 
   return (
+
     <div className='profile_home'>
+
       <div className="side1">
         <Link href={'/'} className='Link Link1 insta'><Instagram /></Link>
         <Link href={'/'} className='Link Link2 fb'><Facebook /></Link>
@@ -164,9 +167,8 @@ function Profile() {
       {/*-------------------------------- the second side */}
 
       <div className="side2">
-        <h1>
-          <span>Arif</span> Rahman
-        </h1>
+        <p>Hunt the bug</p>
+        <h1><span>Arif</span> Rahman</h1>
         <div className="typewriter-container">
           <span className='typewriter-head'>
             I'm a
@@ -182,30 +184,29 @@ function Profile() {
             />
           </div>
         </div>
-
       </div>
+
 
       {/* =--------------------------------the second side */}
 
       <div className='side3'>
-        <div className="icons">
-          <img src="/badge1.png" alt="not-showing" />
-        </div>
+        <a className="findbug" >
+          <div className="icons">
+            <img src="/badge1.png" alt="not-showing" />
+          </div>
+        </a>
         <div className="icons">
           <img src="/badge2.png" alt="not-showing" />
         </div>
         <div className="icons">
           <img src="/badge3.png" alt="not-showing" />
         </div>
-        {/* <div className="icons">
-          <img src="/badge4.png" alt="not-showing" />
-        </div> */}
         <div className="icons">
           <img src="/badge5.png" alt="not-showing" />
         </div>
       </div>
 
-      
+
     </div>
   )
 }
