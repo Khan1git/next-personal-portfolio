@@ -53,7 +53,7 @@ function CustomCursor() {
         cancelAnimationFrame(animationFrameId);
       }
     };
-  }, [mouseX, mouseY]);
+  }, [mouseX, mouseY, cursorX, cursorY, animationFrameId]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
