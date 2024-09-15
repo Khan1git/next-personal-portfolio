@@ -27,7 +27,6 @@ function contact() {
                     <textarea type="text" rows={10} placeholder='msg' />
                     <a href="mailto:arifrahman1k7@gmail.com">contact</a>
                 </div>
-
             </div>
         </div>
     </section>

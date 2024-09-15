@@ -45,9 +45,9 @@ body{
     transition: transform 0.3s ease;
   }
   
-  .project_card img {
+  .project_card .img {
     max-width: 100%;
-    height: 35vh;
+    height: auto;
   }
   
   .project_card h3 {

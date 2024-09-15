@@ -1,6 +1,6 @@
 import React from 'react'
 import './project.css'
-
+import Image from 'next/image'
 
 const Project = () => {
     return (
@@ -10,7 +10,7 @@ const Project = () => {
             <p>My All project from beginner to advance</p>
             <div className="projects_container">
                 <div class="project_card">
-                    <img src="/project/project1.png" alt="Project Image" />
+                    <Image src="/project/project1.png" alt="Project Image" className='img' width={500} height={400} />
                     <h3>MERN STACK BILLING APPLICATION </h3>
                     <div class="project_info">
                         <p>MERN STACK BILLING APPLICATION DESIGNED TO KEEP TRACK OF SALES IN A SHOP</p>
@@ -19,7 +19,7 @@ const Project = () => {
                 </div>
 
                 <div class="project_card">
-                    <img src="/project/project4.png"  alt="Project Image" />
+                    <Image src="/project/project4.png"  alt="Project Image" width={500} height={400} />
                     <h3>Socail Media Application</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -27,7 +27,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div class="project_card">
-                    <img src="/project/attendance system.png"  alt="Project Image" />
+                    <Image src="/project/attendance system.png"  alt="Project Image" width={500} height={400} />
                     <h3>Attendance System Mern stack</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -36,7 +36,7 @@ const Project = () => {
                 </div>
     
                 <div class="project_card">
-                    <img src="/project/project2.png"  alt="Project Image" />
+                    <Image src="/project/project2.png"  alt="Project Image" width={500} height={400} />
                     <h3>Website Animation Gsap</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -46,7 +46,7 @@ const Project = () => {
 
 
                 <div class="project_card">
-                    <img src="/project/project3.png"  alt="Project Image" />
+                    <Image src="/project/project3.png"  alt="Project Image" width={500} height={400} />
                     <h3>Courses Webiste</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -55,7 +55,7 @@ const Project = () => {
                 </div>
 
                 <div class="project_card">
-                    <img src="/project/project7.png"  alt="Project Image" />
+                    <Image src="/project/project7.png"  alt="Project Image" width={500} height={400} />
                     <h3>Portfolio website</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -64,7 +64,7 @@ const Project = () => {
                 </div>
                 
                 <div class="project_card">
-                    <img src="/project/project5.png"  alt="Project Image" />
+                    <Image src="/project/project5.png"  alt="Project Image" width={500} height={400} />
                     <h3>Tissue Website Design</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -73,7 +73,7 @@ const Project = () => {
                 </div>
 
                 <div class="project_card">
-                    <img src="/project/project6.png"  alt="Project Image" />
+                    <Image src="/project/project6.png"  alt="Project Image" width={500} height={400} />
                     <h3>Html and Css School webiste</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>
@@ -81,7 +81,7 @@ const Project = () => {
                     </div>
                 </div>
                 <div class="project_card">
-                    <img src="/project/project.png"  alt="Project Image" />
+                    <Image src="/project/project.png"  alt="Project Image" width={500} height={400} />
                     <h3>Blog Website</h3>
                     <div class="project_info">
                     <a href="project_link" class="project_link">View Project</a>

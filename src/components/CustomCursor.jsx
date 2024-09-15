@@ -22,7 +22,7 @@ function CustomCursor() {
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []);
+  }, []); // No dependencies needed here
 
   useEffect(() => {
     const followMouse = () => {
@@ -53,17 +53,13 @@ function CustomCursor() {
         cancelAnimationFrame(animationFrameId);
       }
     };
-  }, [mouseX, mouseY, cursorX, cursorY, animationFrameId]);
+  }, [mouseX, mouseY, cursorX, cursorY]); // Include all dependencies here
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsHovering(true);
-          } else {
-            setIsHovering(false);
-          }
+          setIsHovering(entry.isIntersecting);
         });
       },
       { threshold: 0.5 }
@@ -75,7 +71,7 @@ function CustomCursor() {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, []); // No dependencies needed here
 
   return (
     <div

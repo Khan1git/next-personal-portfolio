@@ -205,8 +205,6 @@ function Profile() {
           <img src="/badge5.png" alt="not-showing" />
         </div>
       </div>
-
-
     </div>
   )
 }
