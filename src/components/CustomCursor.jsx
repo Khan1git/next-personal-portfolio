@@ -11,28 +11,32 @@ function CustomCursor() {
   const [isHovering, setIsHovering] = useState(false);
   const cursorRef = useRef(null);
 
+  // Track mouse position
   const handleMouseMove = (e) => {
     setMouseX(e.clientX);
     setMouseY(e.clientY);
   };
 
+  // Set up mousemove event listener
   useEffect(() => {
     document.addEventListener('mousemove', handleMouseMove);
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []); // No dependencies needed here
+  }, []);
 
+  // Cursor follow effect
   useEffect(() => {
     const followMouse = () => {
-      const factor = 0.1; // Interpolation speed
+      const factor = 0.1; // Smoothness of the cursor
       const diffX = mouseX - cursorX;
       const diffY = mouseY - cursorY;
 
       const distance = Math.sqrt(diffX * diffX + diffY * diffY);
 
+      // Snap to mouse position when close enough
       if (distance < 5) {
-        setCursorX(mouseX); // Snap to the mouse position
+        setCursorX(mouseX);
         setCursorY(mouseY);
       } else {
         setCursorX((prevX) => prevX + diffX * factor);
@@ -42,10 +46,14 @@ function CustomCursor() {
       requestAnimationFrame(followMouse);
     };
 
+    // Start following the mouse
     const id = requestAnimationFrame(followMouse);
-    return () => cancelAnimationFrame(id); // Cleanup animation
+
+    // Cleanup the animation frame on unmount
+    return () => cancelAnimationFrame(id);
   }, [mouseX, mouseY, cursorX, cursorY]);
 
+  // Intersection Observer for detecting hovering on '.HeroSection'
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -59,6 +67,7 @@ function CustomCursor() {
     const observedElements = document.querySelectorAll('.HeroSection');
     observedElements.forEach((element) => observer.observe(element));
 
+    // Cleanup observer on unmount
     return () => {
       observer.disconnect();
     };

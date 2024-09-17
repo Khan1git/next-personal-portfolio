@@ -172,7 +172,7 @@ function Profile() {
         <h1><span>Arif</span> Rahman</h1>
         <div className="typewriter-container">
           <span className='typewriter-head'>
-            I'm a
+            I am a
           </span>
           <div>
             <Typewriter
