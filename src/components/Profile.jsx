@@ -168,7 +168,7 @@ function Profile() {
       {/*-------------------------------- the second side */}
 
       <div className="side2">
-        <p>Hunt the bug</p>
+        <p className='bug'>Hunt the bug</p>
         <h1><span>Arif</span> Rahman</h1>
         <div className="typewriter-container">
           <span className='typewriter-head'>

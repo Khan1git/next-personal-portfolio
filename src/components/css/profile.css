@@ -266,7 +266,9 @@ body {
 
 @media (max-width: 970px) {
 
-
+    .bug{
+        display: none;
+    }
     .profile_home .side2 p {
         gap: 1rem;
     }
