@@ -26,7 +26,7 @@ body{
     /* height: 80%; */
     /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
     grid-gap: 1rem;
     /* margin-top: 50px; */
 }
@@ -46,7 +46,7 @@ body{
   }
   
   .project_card .img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
   }
   
