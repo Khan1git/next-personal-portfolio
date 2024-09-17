@@ -5,7 +5,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-
+import Image from 'next/image'
 import { LaptopMinimal, Drama, Rss } from 'lucide-react'
 
 
@@ -111,7 +111,7 @@ function About() {
 
           </div>
           <div className="side_1_img">
-            <img src="./profile3.jpeg" alt="" />
+            <Image src="/profile3.jpeg" alt="" className='img' width={500} height={400} />
           </div>
         </div>
       </section>
@@ -147,42 +147,42 @@ function About() {
         <div class="skills_container">
           {/* <!-- First div with greater height --> */}
           <div class="skill-item large">
-            <img src="/python.svg" alt="Python" />
+            <Image src="/python.svg" alt="Python" className='img'  width={500} height={400} />
             <p>Python</p>
           </div>
           {/* <!-- Normal divs --> */}
           <div class="skill-item">
-            <img src="/javascript.png" alt="Skill" />
+            <Image src="/javascript.png" className='img' alt="Skill" width={500} height={400}  />
             <p>Javascript</p>
           </div>
           <div class="skill-item">
-            <img src="/mongodb.png" alt="Skill" />
+            <Image src="/mongodb.png" alt="Skill" className='img' width={500} height={400}  />
             <p>Mongodb</p>
           </div>
           <div class="skill-item">
-            <img src="/react.png" alt="Skill" />
+            <Image src="/react.png" alt="Skill" className='img'  width={500} height={400} />
             <p>React</p>
           </div>
           <div class="skill-item">
-            <img src="/node.png" alt="Skill" />
+            <Image src="/node.png" alt="Skill" className='img' width={500} height={400}  />
             <p>Nodejs</p>
           </div>
           <div class="skill-item">
-            <img src="/expressjs.png" alt="Skill" />
+            <Image src="/expressjs.png" alt="Skill" className='img' width={500} height={400}  />
             <p>Expressjs</p>
           </div>
           <div class="skill-item">
-            <img src="/htmlcss.png" alt="Skill" />
+            <Image src="/htmlcss.png" alt="Skill" className='img' width={500} height={400}  />
             <p>Html and CSS</p>
           </div>
           <div class="skill-item">
-            <img src="/nextjs.png" alt="Skill" />
+            <Image src="/nextjs.png" alt="Skill" className='img' width={500} height={400}  />
             <p>Nextjs</p>
           </div>
 
           {/* <!-- Last div with greater height --> */}
           <div class="skill-item large">
-            <img src="/bughunt.png" alt="Skill" />
+            <Image src="/bughunt.png" alt="Skill"  className='img' width={500} height={400}  />
             <p>Bug Bounty</p>
           </div>
         </div>
