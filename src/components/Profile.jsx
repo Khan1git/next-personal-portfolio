@@ -9,6 +9,7 @@ import Typewriter from 'typewriter-effect'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import Image from 'next/image'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -192,17 +193,17 @@ function Profile() {
       <div className='side3'>
         <a className="findbug" >
           <div className="icons">
-            <img src="/badge1.png" alt="not-showing" />
+            <Image src="/badge1.png" alt="not-showing" className='img'  width={100} height={60} />
           </div>
         </a>
         <div className="icons">
-          <img src="/badge2.png" alt="not-showing" />
+          <Image src="/badge2.png" alt="not-showing" className='img'  width={100} height={60}/>
         </div>
         <div className="icons">
-          <img src="/badge3.png" alt="not-showing" />
+          <Image src="/badge3.png" alt="not-showing" className='img'  width={100} height={60}/>
         </div>
         <div className="icons">
-          <img src="/badge5.png" alt="not-showing" />
+          <Image src="/badge5.png" alt="not-showing" className='img'  width={100} height={60} />
         </div>
       </div>
     </div>

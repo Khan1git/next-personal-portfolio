@@ -10,7 +10,6 @@ function CustomCursor() {
   const [mouseY, setMouseY] = useState(-50); // Mouse position
   const [isHovering, setIsHovering] = useState(false);
   const cursorRef = useRef(null);
-  const [animationFrameId, setAnimationFrameId] = useState(null);
 
   const handleMouseMove = (e) => {
     setMouseX(e.clientX);
@@ -30,30 +29,22 @@ function CustomCursor() {
       const diffX = mouseX - cursorX;
       const diffY = mouseY - cursorY;
 
-      // Calculate the distance between cursor and mouse pointer
       const distance = Math.sqrt(diffX * diffX + diffY * diffY);
 
-      // Snap to the mouse if it's close, otherwise follow smoothly
       if (distance < 5) {
         setCursorX(mouseX); // Snap to the mouse position
         setCursorY(mouseY);
       } else {
-        setCursorX((prevX) => prevX + diffX * factor); // Smooth movement
+        setCursorX((prevX) => prevX + diffX * factor);
         setCursorY((prevY) => prevY + diffY * factor);
       }
 
-      const id = requestAnimationFrame(followMouse);
-      setAnimationFrameId(id);
+      requestAnimationFrame(followMouse);
     };
 
-    followMouse();
-
-    return () => {
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
-      }
-    };
-  }, [mouseX, mouseY, cursorX, cursorY]); // Include all dependencies here
+    const id = requestAnimationFrame(followMouse);
+    return () => cancelAnimationFrame(id); // Cleanup animation
+  }, [mouseX, mouseY, cursorX, cursorY]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -65,13 +56,13 @@ function CustomCursor() {
       { threshold: 0.5 }
     );
 
-    const blackTextElements = document.querySelectorAll('.HeroSection');
-    blackTextElements.forEach((element) => observer.observe(element));
+    const observedElements = document.querySelectorAll('.HeroSection');
+    observedElements.forEach((element) => observer.observe(element));
 
     return () => {
       observer.disconnect();
     };
-  }, []); // No dependencies needed here
+  }, []);
 
   return (
     <div

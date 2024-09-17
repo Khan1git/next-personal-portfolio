@@ -244,12 +244,12 @@ body {
     /* border: 1px solid red; */
 }
 
-.profile_home .side3 .icons img{
+.profile_home .side3 .icons .img{
     width: 50%;
     filter: grayscale(100%);
     /* border: 1px solid red; */
 }
-.profile_home .side3 .icons img:hover{
+.profile_home .side3 .icons .img:hover{
     cursor: pointer;
     filter: grayscale(0%);
     /* border: 1px solid red; */
