@@ -30,6 +30,11 @@
 
 @media (max-width: 480px) {
     .typewriterText {
-        font-size: 16px; /* Even smaller font size for mobile phones */
+        font-size: 12px; /* Even smaller font size for mobile phones */
+    }
+}
+@media (max-width: 380px) {
+    .typewriterText {
+        font-size: 10px; /* Even smaller font size for mobile phones */
     }
 }
