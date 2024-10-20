@@ -4,15 +4,15 @@ import styles from './lab.module.css';
 
 const PoemTypewriter = () => {
     const poemLines = [
-        " In the mirror, shadows play",
-        "  Fragments of a brighter day",
-        "Thoughts like whispers, fears unwind",
-        "  In the chaos, peace we find",
-
-        " Layers deep, the mind’s embrace",
-        "Searching for a sacred space",
-        "With every trial, strength will bloom",
-        "From darkest depths, we’ll find our room",
+       " In a world where whispers fade",  
+        "Chasing shadows, unafraid",  
+        "Dreams like rivers, winding slow",  
+        "In the dark, our hopes will glow",  
+        
+        "With every fall, we rise again",  
+       " Through the storm, we find our zen",  
+        "In the silence, strength is found",  
+        "From the depths, we’ll claim our ground",  
         '01-01-2000'
     ];
 
