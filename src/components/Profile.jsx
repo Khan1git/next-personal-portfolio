@@ -177,7 +177,7 @@ function Profile() {
           <div>
             <Typewriter
               options={{
-                strings: [' Web Developer', 'Freelancer', 'Bug Hunter'],
+                strings: [' Web Developer', 'Freelancer', 'Bug Hunter', 'CTF Player'],
                 autoStart: true,
                 loop: true,
                 wrapperClassName: 'typewriter-text'
