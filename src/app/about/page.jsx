@@ -133,7 +133,7 @@ function About() {
           </div>
           <div className="card">
             <Rss size={100} />
-            <h4>Blogger</h4>
+            <h4>CTF Player</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui ratione aspernatur?</p>
           </div>
         </div>

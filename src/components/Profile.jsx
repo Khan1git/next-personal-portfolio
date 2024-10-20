@@ -168,7 +168,7 @@ function Profile() {
       {/*-------------------------------- the second side */}
 
       <div className="side2">
-        <p className='bug'>Hunt the bug</p>
+        {/* <p className='bug'>Hunt the bug</p> */}
         <h1><span>Arif</span> Rahman</h1>
         <div className="typewriter-container">
           <span className='typewriter-head'>
@@ -189,22 +189,6 @@ function Profile() {
 
       {/* =--------------------------------the second side */}
 
-      {/* <div className='side3'>
-        <a className="findbug" >
-          <div className="icons">
-            <Image src="/badge1.png" alt="not-showing" className='img' width={100} height={60} />
-          </div>
-        </a>
-        <div className="icons">
-          <Image src="/badge2.png" alt="not-showing" className='img' width={100} height={60} />
-        </div>
-        <div className="icons">
-          <Image src="/badge3.png" alt="not-showing" className='img' width={100} height={60} />
-        </div>
-        <div className="icons">
-          <Image src="/badge5.png" alt="not-showing" className='img' width={100} height={60} />
-        </div>
-      </div> */}
     </div>
   )
 }
