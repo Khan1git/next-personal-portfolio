@@ -18,7 +18,6 @@ function Menu() {
         { path: '/projects', label: "Projects" },
         { path: '/about', label: "About" },
         { path: '/contact', label: "Contact" },
-        { path: '/threads', label: "Threads" },
     ];
 
     const t1 = useRef();
