@@ -4,16 +4,11 @@ import styles from './lab.module.css';
 
 const PoemTypewriter = () => {
     const poemLines = [
-       " In a world where whispers fade",  
-        "Chasing shadows, unafraid",  
-        "Dreams like rivers, winding slow",  
-        "In the dark, our hopes will glow",  
-        
-        "With every fall, we rise again",  
-       " Through the storm, we find our zen",  
-        "In the silence, strength is found",  
-        "From the depths, we’ll claim our ground",  
-        '01-01-2000'
+        "We are the shadows, we see it all",
+        "The rise, the lies, the empire's fall",  
+        "No mercy given, no lines to bend",
+        "We will take revenge — let the war begin",
+        "Let The War Begin"
     ];
 
     const [typedPoem, setTypedPoem] = useState('');
