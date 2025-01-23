@@ -51,7 +51,7 @@ You can start customizing your portfolio by editing the `app/page.js` file. Chan
 
 ## 🌐 Live Demo  
 
-Check out the live version of this portfolio: [**your-portfolio.vercel.app**](https://your-portfolio.vercel.app)  
+Check out the live version of this portfolio: [**your-portfolio.vercel.app**](https://next-personal-portfolio-psi.vercel.app/)  
 
 ---
 
